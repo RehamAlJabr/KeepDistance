@@ -1,0 +1,94 @@
+<!--
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ -->
+ 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="./js/index.js"></script>
+
+</head>
+
+
+<!-- creating tabs based on W3school javascript tutorial -->
+<!-- http://www.w3schools.com/howto/howto_js_tabs.asp -->
+
+<!--<body onload="createCharts()">-->
+<body style="margin-top: 10%">
+
+<!--<ul class="tab">-->
+<!--  <li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'PageMain')">Show Data</a></li>-->
+<!--  <li><a href="javascript:void(0)" class="tablinks" onclick="openPage(event, 'PageSetup')">Setup</a></li>-->
+<!--</ul>-->
+
+<!--<div id="PageMain" class="tabcontent">-->
+<!--          <div class="page-content">-->
+<!--            <div class="gauges" id="temperature-gauge"></div>-->
+<!--          </div>-->
+<!--</div>-->
+
+<!--<div id="PageSetup" class="tabcontent">-->
+          <div class="page-content">
+
+<!--            <button disabled onclick="ble.disconnect(iDry.id,app.bleConnectionFailure,app.bleConnectionFailure)" id="button-disconnect">-->
+<!--              Disconnect Soliditek-->
+<!--            </button>-->
+
+
+
+            <table id='BLE-table' style="width: 100%">
+              <thead>
+                <tr>
+                  <th class="mdl-data-table__cell--non-numeric">Device</th>
+                  <th class="mdl-data-table__cell--non-numeric">RSSI</th>
+                  <th class="mdl-data-table__cell--non-numeric">ID</th>
+                </tr>
+              </thead>
+              <tbody id="BLE-table-body">
+              </tbody>
+            </table>
+              <!-- Accent-colored raised button with ripple -->
+              <div style="text-align: center;">
+                  <div style="position: absolute; top: 50%; margin-left: 25%; height:15%;">
+<!--              <button disabled onclick="app.refreshDeviceList()" id="button-scan" style="height: 30%; width: 100%; margin-bottom: 10%">-->
+<!--                  Scan-->
+<!--              </button>-->
+                  <div id="info" style="color:darkred"></div>
+<!--                  <div id="debug-info">Debug Info</div>-->
+<!--                  <div id="debug-area">debug area</div>-->
+              </div>
+              </div>
+          </div>
+<!--</div>-->
+
+<script type="text/javascript" src="cordova.js"></script>
+<!--<script type="text/javascript" src="./js/raphael-2.1.4.min.js"></script>-->
+<!--<script type="text/javascript" src="./js/justgage.js"></script>-->
+
+    
+</body>
+</html> 
